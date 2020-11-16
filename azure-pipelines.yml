@@ -1,8 +1,9 @@
 trigger: none
 
+variables: 
+group: vraiants
+
 jobs:
-variables:
-- group: images
 - template: azure-pipelines-linux.yml
   parameters:
     images: $(variants)
